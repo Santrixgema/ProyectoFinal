@@ -17,7 +17,7 @@ import java.util.List;
  *   COCINERO  |id|login|pwd|nombre|codDesc|enTurno|puntos|idFavs
  *   ADMIN     |id|login|pwd|nombre
  */
-public class PeristenciaUsuarios {
+public class PersistenciaUsuarios {
 
     private static final String SEP       = "|";
     private static final String SEP_LISTA = ",";
@@ -25,7 +25,7 @@ public class PeristenciaUsuarios {
 
     private String rutaDatos;
 
-    public PeristenciaUsuarios(String rutaDatos) {
+    public PersistenciaUsuarios(String rutaDatos) {
         this.rutaDatos = rutaDatos;
     }
 

@@ -17,7 +17,7 @@ import java.util.List;
  * Archivo: datos/inventario_venta.txt
  * Formato: idJuego|cantidad|precio
  */
-public class PeristenciaCopias {
+public class PersistenciaCopias {
 
     private static final String SEP = "|";
     private static final String ARCHIVO_PRESTAMO = "copias_prestamo.txt";
@@ -25,7 +25,7 @@ public class PeristenciaCopias {
 
     private String rutaDatos;
 
-    public PeristenciaCopias(String rutaDatos) {
+    public PersistenciaCopias(String rutaDatos) {
         this.rutaDatos = rutaDatos;
     }
 

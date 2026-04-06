@@ -37,7 +37,7 @@ import java.util.List;
  *
  * Sugerencias se guardan en: sugerencias.txt
  */
-public class PeristenciaCafe {
+public class PersistenciaCafe {
 
     private static final String SEP    = "|";
     private static final String ARCH_CAFE       = "cafe.txt";
@@ -46,30 +46,30 @@ public class PeristenciaCafe {
 
     private final String rutaDatos;
 
-    private final PeristenciaJuegos    persJuegos;
-    private final PeristenciaCopias    persCopias;
-    private final PeristenciaUsuarios  persUsuarios;
-    private final PeristenciaMenu      persMenu;
-    private final PeristenciaTurnos    persTurnos;
-    private final PeristenciaPrestamos persPrestamos;
-    private final PeristenciaVentas    persVentas;
+    private final PersistenciaJuegos    persJuegos;
+    private final PersistenciaCopias    persCopias;
+    private final PersistenciaUsuarios  persUsuarios;
+    private final PersistenciaMenu      persMenu;
+    private final PersistenciaTurnos    persTurnos;
+    private final PersistenciaPrestamos persPrestamos;
+    private final PersistenciaVentas    persVentas;
 
     /**
      * @param rutaDatos Ruta a la carpeta de datos, p.ej. "datos/"
      *                  La carpeta se crea automáticamente si no existe.
      */
-    public PeristenciaCafe(String rutaDatos) {
+    public PersistenciaCafe(String rutaDatos) {
         // Asegurarse de que la ruta termina en separador
         this.rutaDatos = rutaDatos.endsWith(File.separator) || rutaDatos.endsWith("/")
                 ? rutaDatos : rutaDatos + "/";
 
-        this.persJuegos    = new PeristenciaJuegos(this.rutaDatos);
-        this.persCopias    = new PeristenciaCopias(this.rutaDatos);
-        this.persUsuarios  = new PeristenciaUsuarios(this.rutaDatos);
-        this.persMenu      = new PeristenciaMenu(this.rutaDatos);
-        this.persTurnos    = new PeristenciaTurnos(this.rutaDatos);
-        this.persPrestamos = new PeristenciaPrestamos(this.rutaDatos);
-        this.persVentas    = new PeristenciaVentas(this.rutaDatos);
+        this.persJuegos    = new PersistenciaJuegos(this.rutaDatos);
+        this.persCopias    = new PersistenciaCopias(this.rutaDatos);
+        this.persUsuarios  = new PersistenciaUsuarios(this.rutaDatos);
+        this.persMenu      = new PersistenciaMenu(this.rutaDatos);
+        this.persTurnos    = new PersistenciaTurnos(this.rutaDatos);
+        this.persPrestamos = new PersistenciaPrestamos(this.rutaDatos);
+        this.persVentas    = new PersistenciaVentas(this.rutaDatos);
     }
 
     /**

@@ -4,7 +4,7 @@ import Cafeteria.*;
 import Servicios.*;
 import inventario.*;
 import juegos.*;
-import persistencia.PeristenciaCafe;
+import persistencia.PersistenciaCafe;
 import sistema.SistemaCafe;
 import transacciones.*;
 import usuarios.*;
@@ -475,7 +475,7 @@ public class ConsolaPrueba {
 
     private static void probarPersistencia(SistemaCafe sistema) {
         // ── GUARDAR ───────────────────────────────────────────
-        PeristenciaCafe persistencia = new PeristenciaCafe(RUTA_DATOS);
+        PersistenciaCafe persistencia = new PersistenciaCafe(RUTA_DATOS);
         try {
             persistencia.guardar(sistema);
             verificar("Sistema guardado en disco sin errores", true);
@@ -494,11 +494,11 @@ public class ConsolaPrueba {
         int copiasPrestAntes = sistema.getServicioInventario().getInventarioPrestamo().getCopias().size();
 
         // ── RECARGAR EN SISTEMA NUEVO ────────────────────────
-        int cap = PeristenciaCafe.leerCapacidadMaxima(RUTA_DATOS);
+        int cap = PersistenciaCafe.leerCapacidadMaxima(RUTA_DATOS);
         SistemaCafe sistemaRecargado = new SistemaCafe(cap);
 
         try {
-            boolean habia = new PeristenciaCafe(RUTA_DATOS).cargar(sistemaRecargado);
+            boolean habia = new PersistenciaCafe(RUTA_DATOS).cargar(sistemaRecargado);
             verificar("Datos encontrados y cargados desde disco", habia);
         } catch (IOException e) {
             verificar("Error al cargar: " + e.getMessage(), false);

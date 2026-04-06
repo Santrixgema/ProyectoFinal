@@ -19,7 +19,7 @@ import java.util.List;
  * Formato: idSolicitud|idSolicitante|idTurno|idDestino|tipo|estado
  *          (idDestino y idTurno pueden ser "null")
  */
-public class PeristenciaTurnos {
+public class PersistenciaTurnos {
 
     private static final String SEP     = "|";
     private static final String NULO    = "null";
@@ -28,7 +28,7 @@ public class PeristenciaTurnos {
 
     private String rutaDatos;
 
-    public PeristenciaTurnos(String rutaDatos) {
+    public PersistenciaTurnos(String rutaDatos) {
         this.rutaDatos = rutaDatos;
     }
 

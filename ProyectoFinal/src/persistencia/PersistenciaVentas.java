@@ -23,7 +23,7 @@ import java.util.List;
  *     J,idJuego,cantidad,precio,descuento   (item de juego)
  *     A,idAlimento,cantidad,precio,descuento (item de alimento)
  */
-public class PeristenciaVentas {
+public class PersistenciaVentas {
 
     private static final String SEP       = "|";
     private static final String SEP_ITEM  = ";";
@@ -33,7 +33,7 @@ public class PeristenciaVentas {
 
     private String rutaDatos;
 
-    public PeristenciaVentas(String rutaDatos) {
+    public PersistenciaVentas(String rutaDatos) {
         this.rutaDatos = rutaDatos;
     }
 

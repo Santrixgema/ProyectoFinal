@@ -19,7 +19,7 @@ import java.util.List;
  * Formato: idPrestamo|idCopia|idUsuario|idMesa|fechaPrestamo|fechaDevolucion|activo
  *          (idMesa y fechaDevolucion pueden ser "null")
  */
-public class PeristenciaPrestamos {
+public class PersistenciaPrestamos {
 
     private static final String SEP    = "|";
     private static final String NULO   = "null";
@@ -28,7 +28,7 @@ public class PeristenciaPrestamos {
 
     private String rutaDatos;
 
-    public PeristenciaPrestamos(String rutaDatos) {
+    public PersistenciaPrestamos(String rutaDatos) {
         this.rutaDatos = rutaDatos;
     }
 

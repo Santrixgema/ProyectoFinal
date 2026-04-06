@@ -11,14 +11,14 @@ import java.util.List;
  * Archivo: datos/juegos.txt
  * Formato por línea: idJuego|nombre|anio|empresa|minJ|maxJ|edadMin|categoria|dificil
  */
-public class PeristenciaJuegos {
+public class PersistenciaJuegos {
 
     private static final String SEP = "|";
     private static final String ARCHIVO = "juegos.txt";
 
     private String rutaDatos;
 
-    public PeristenciaJuegos(String rutaDatos) {
+    public PersistenciaJuegos(String rutaDatos) {
         this.rutaDatos = rutaDatos;
     }
 

@@ -17,7 +17,7 @@ import java.util.List;
  *   BEBIDA    |id|nombre|precio|alcoholica|caliente
  *   PASTELERIA|id|nombre|precio|alergeno1,alergeno2
  */
-public class PeristenciaMenu {
+public class PersistenciaMenu {
 
     private static final String SEP       = "|";
     private static final String SEP_LISTA = ",";
@@ -25,7 +25,7 @@ public class PeristenciaMenu {
 
     private String rutaDatos;
 
-    public PeristenciaMenu(String rutaDatos) {
+    public PersistenciaMenu(String rutaDatos) {
         this.rutaDatos = rutaDatos;
     }
 
